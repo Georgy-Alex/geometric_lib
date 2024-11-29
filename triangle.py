@@ -1,28 +1,61 @@
-def area(a, h):
-    ''' 
-    Принимает длину основания и высоту треугольника
-    Параметры:
-        a (int): длина основания треугольника
-        h (int): высота треугольника
-    Возвращаемое значение:
-        возвращает площадь треугольника
-    Например:
-        def area(6, 4):
-        return 6 * 4 / 2 Ответ: 12.0
-    '''
-    return a * h / 2
+import unittest
 
-def perimeter(a, b, c):
+def area(a):
     ''' 
-    Принимает длины сторон треугольника
+    Принимает длину стороны квадрата
     Параметры:
-        a (int): длина первой стороны треугольника
-        b (int): длина второй стороны треугольника
-        c (int): длина третьей стороны треугольника
+        a (int): длина стороны квадрата
     Возвращаемое значение:
-        возвращает периметр треугольника
+        возвращает площадь квадрата
     Например:
-        def perimeter(3, 4, 5):
-        return 3 + 4 + 5 Ответ: 12
+        def area(4):
+        return 4 * 4 Ответ: 16
     '''
-    return a + b + c
+    return a * a
+
+def perimeter(a):
+    ''' 
+    Принимает длину стороны квадрата
+    Параметры:
+        a (int): длина стороны квадрата
+    Возвращаемое значение:
+        возвращает периметр квадрата
+    Например:
+        def perimeter(4):
+        return 4 * 4 Ответ: 16
+    '''
+    return 4 * a
+
+
+# Встроенные тесты
+class SquareTestCase(unittest.TestCase):
+    def test_area_zero(self):
+        """Тест площади квадрата при длине стороны 0"""
+        res = area(0)
+        self.assertEqual(res, 0)
+
+    def test_area_positive(self):
+        """Тест площади квадрата при положительной длине стороны"""
+        res = area(5)
+        self.assertEqual(res, 25)
+
+    def test_area_large(self):
+        """Тест площади квадрата для большой длины стороны"""
+        res = area(1000)
+        self.assertEqual(res, 1000000)
+
+    def test_perimeter_zero(self):
+        """Тест периметра квадрата при длине стороны 0"""
+        res = perimeter(0)
+        self.assertEqual(res, 0)
+
+    def test_perimeter_positive(self):
+        """Тест периметра квадрата при положительной длине стороны"""
+        res = perimeter(4)
+        self.assertEqual(res, 16)
+
+    def test_perimeter_large(self):
+        """Тест периметра квадрата для большой длины стороны"""
+        res = perimeter(1000)
+        self.assertEqual(res, 4000)
+
