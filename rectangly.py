@@ -55,7 +55,3 @@ class RectangleTestCase(unittest.TestCase):
     def test_perimeter_general(self):
         res = perimeter(4, 5)
         self.assertEqual(res, 18, "Периметр прямоугольника со сторонами 4 и 5 должен быть равен 18")
-
-# Проверяем запуск тестов
-# if __name__ == "__main__":
-#     unittest.main()
