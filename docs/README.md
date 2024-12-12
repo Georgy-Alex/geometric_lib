@@ -195,7 +195,7 @@
 3. Методы тестирования:
 
 - Позитивное тестирование: проверка корректной работы с валидными данными.
-- Негативное тестирование: проверка обработки ошибок с некорректными входными данными.
+<!-- - Негативное тестирование: проверка обработки ошибок с некорректными входными данными. -->
 
 ## Критерии приемки
 
@@ -237,34 +237,3 @@
 - [**d2775ba**](https://github.com/Georgy-Alex/geometric_lib/commit/d2775baa6e8b62b743092185e8dd73755230d8bf): add new file
 - [**d078c8d**](https://github.com/Georgy-Alex/geometric_lib/commit/d078c8d9ee6155f3cb0e577d28d337b791de28e2#diff-0b5ca119d2be595aa307d34512d9679e49186307ef94201e4b3dfa079aa89938R10) (origin/main, origin/HEAD, main): L-03: Docs added
 - [**8ba9aeb**](https://github.com/Georgy-Alex/geometric_lib/commit/8ba9aeb3cea847b63a91ac378a2a6db758682460): L-03: Circle and square added
-
-<!-- commit e294ee73d454e57ab2033df1d977f0da8410515f
-Author: Georgy-Alex <118427017+Georgy-Alex@users.noreply.github.com>
-Date: Wed Oct 30 15:19:27 2024 +0300
-
-full labaWork2
-
-commit 507bf3a83cb906ac9ffe02e80f92340bc4e9dee7
-Author: Georgy-Alex <118427017+Georgy-Alex@users.noreply.github.com>
-Date: Thu Oct 3 00:54:37 2024 +0300
-
-edit math and add new file
-
-commit d2775baa6e8b62b743092185e8dd73755230d8bf
-Author: Georgy-Alex <118427017+Georgy-Alex@users.noreply.github.com>
-Date: Thu Oct 3 00:50:32 2024 +0300
-
-add new file
-
-commit d078c8d9ee6155f3cb0e577d28d337b791de28e2
-Author: smartiqa <info@smartiqa.ru>
-Date: Thu Mar 4 14:55:29 2021 +0300
-
-L-03: Docs added
-
-commit 8ba9aeb3cea847b63a91ac378a2a6db758682460
-Author: smartiqa <info@smartiqa.ru>
-Date: Thu Mar 4 14:54:08 2021 +0300
-
-L-03: Circle and square added
- -->
